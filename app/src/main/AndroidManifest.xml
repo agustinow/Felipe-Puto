@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.odella.bacchus">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/grape_icon"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".Controller.PurchaseActivity">
+        </activity>
+        <activity
+                android:name=".Controller.DialogWineActivity"
+                android:theme="@style/AppTheme.mytheme">
+        </activity>
+        <activity
+                android:name=".Controller.ClientMainActivity"
+                android:label="@string/title_activity_client_main"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Controller.LoginActivity">
+        </activity>
+        <activity
+                android:name=".Controller.MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

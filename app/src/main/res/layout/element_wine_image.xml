@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="200dp"
+                                                   android:background="@drawable/item_rounded_selector"
+                                                   android:padding="0dp" android:id="@+id/constraintWineImage"
+                                                   android:layout_margin="12dp" android:elevation="20dp">
+
+    <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnWineImageCart"
+            android:scaleType="fitCenter" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:background="@drawable/icon_cart_nobg"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent" android:padding="8dp"/>
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/grape_icon"
+            android:id="@+id/imgWineImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toTopOf="@+id/txtWineImagePrice"
+    />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/txtWineImageName" app:layout_constraintStart_toEndOf="@+id/imgWineImage"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/widget_edittext_dark" android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            tools:text="Jus de Raymond"
+            android:singleLine="false" android:maxLines="3"
+            android:gravity="start|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/imgWineImageColor"
+            app:layout_constraintBottom_toTopOf="@+id/btnWineImageCart" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgWineImageColor"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            tools:srcCompat="@drawable/tag_normal" android:elevation="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWineImagePrice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgWineImage"
+            app:layout_constraintEnd_toEndOf="@+id/imgWineImage"
+            android:textColor="@android:color/widget_edittext_dark" android:fontFamily="sans-serif-light"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" tools:text="$570"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
